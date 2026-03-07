@@ -1,116 +1,164 @@
-# 🚀 Superpowers
+# Superpowers
 
-A curated collection of **Skills** for Antigravity and other AI coding agents. Skills extend agent capabilities with specialized knowledge, workflows, and best practices.
+![Superpowers Banner](assets/lunartech-banner-m1.png)
 
-## What are Skills?
+Superpowers is a complete software development workflow for your coding agents, built on top of a set of composable "skills" and some initial instructions that make sure your agent uses them.
 
-Skills are structured instruction sets that teach AI agents how to perform specific tasks. Each skill contains:
+## About
 
-- **SKILL.md** — Main instructions and logic
-- **scripts/** — Helper scripts (optional)
-- **examples/** — Reference implementations (optional)
-- **resources/** — Templates and assets (optional)
+Superpowers is built by [LunarTech](https://lunartech.ai/).
 
-## 📦 Available Skills
+- [LunarTech on LinkedIn](https://www.linkedin.com/company/lunartechai/)
+- [Tatev Karen Aslanyan](https://www.linkedin.com/in/tatev-karen-aslanyan/)
+- [Vahe Aslanyan](https://www.linkedin.com/in/vahe-aslanyan/)
 
-### 🎨 Design & Brand
-| Skill | Description |
-|-------|-------------|
-| [brand-identity](skills/brand-identity/) | Design tokens, tech stack, and voice/tone guidelines |
+## How it works
 
-### 🛠️ Development
-| Skill | Description |
-|-------|-------------|
-| [backend-development](skills/backend-development/) | Backend architecture and API development |
-| [python-development](skills/python-development/) | Python best practices and patterns |
-| [functional-programming](skills/functional-programming/) | Functional programming paradigms |
-| [developer-essentials](skills/developer-essentials/) | Core development fundamentals |
+It starts from the moment you fire up your coding agent. As soon as it sees that you're building something, it _doesn't_ just jump into trying to write code. Instead, it steps back and asks you what you're really trying to do.
 
-### 🗄️ Data & Databases
-| Skill | Description |
-|-------|-------------|
-| [database-design](skills/database-design/) | Database schema and modeling |
-| [database-migrations](skills/database-migrations/) | Safe database migration workflows |
-| [database-cloud-optimization](skills/database-cloud-optimization/) | Cloud database performance tuning |
-| [data-engineering](skills/data-engineering/) | Data pipelines and ETL processes |
+Once it's teased a spec out of the conversation, it shows it to you in chunks short enough to actually read and digest.
 
-### 🔍 Code Quality
-| Skill | Description |
-|-------|-------------|
-| [code-review-ai](skills/code-review-ai/) | AI-assisted code review |
-| [code-refactoring](skills/code-refactoring/) | Refactoring patterns and techniques |
-| [code-documentation](skills/code-documentation/) | Documentation best practices |
-| [receiving-code-review](skills/receiving-code-review/) | How to receive and act on reviews |
-| [requesting-code-review](skills/requesting-code-review/) | How to request effective reviews |
+After you've signed off on the design, your agent puts together an implementation plan that's clear enough for an enthusiastic junior engineer with poor taste, no judgement, no project context, and an aversion to testing to follow. It emphasizes true red/green TDD, YAGNI (You Aren't Gonna Need It), and DRY.
 
-### 🐛 Debugging
-| Skill | Description |
-|-------|-------------|
-| [error-debugging](skills/error-debugging/) | General error resolution |
-| [error-diagnostics](skills/error-diagnostics/) | Root cause analysis |
-| [systematic-debugging](skills/systematic-debugging/) | Structured debugging methodology |
+Next up, once you say "go", it launches a _subagent-driven-development_ process, having agents work through each engineering task, inspecting and reviewing their work, and continuing forward. It's not uncommon for Claude to be able to work autonomously for a couple hours at a time without deviating from the plan you put together.
 
-### 🧪 Testing
-| Skill | Description |
-|-------|-------------|
-| [test-driven-development](skills/test-driven-development/) | TDD workflows and patterns |
-| [verification-before-completion](skills/verification-before-completion/) | Pre-commit verification checks |
+There's a bunch more to it, but that's the core of the system. And because the skills trigger automatically, you don't need to do anything special. Your coding agent just has Superpowers.
 
-### 📋 Planning & Workflow
-| Skill | Description |
-|-------|-------------|
-| [writing-plans](skills/writing-plans/) | Creating implementation plans |
-| [executing-plans](skills/executing-plans/) | Executing structured plans |
-| [brainstorming](skills/brainstorming/) | Ideation and exploration |
-| [finishing-a-development-branch](skills/finishing-a-development-branch/) | Branch completion workflows |
+## Sponsorship
 
-### 🤖 Agent Orchestration
-| Skill | Description |
-|-------|-------------|
-| [antigravity-skill-creator](skills/antigravity-skill-creator/) | Create new skills for Antigravity |
-| [dispatching-parallel-agents](skills/dispatching-parallel-agents/) | Multi-agent coordination |
-| [subagent-driven-development](skills/subagent-driven-development/) | Delegating to sub-agents |
-| [full-stack-orchestration](skills/full-stack-orchestration/) | End-to-end project coordination |
+If Superpowers has helped you, consider supporting the project.
 
-### 🔧 Git & Version Control
-| Skill | Description |
-|-------|-------------|
-| [using-git-worktrees](skills/using-git-worktrees/) | Git worktree workflows |
+## Installation
 
-### 🎬 Creative & Media
-| Skill | Description |
-|-------|-------------|
-| [whisk-product-visuals](skills/whisk-product-visuals/) | AI-powered product photography with Google Whisk |
-| [scroll-based-3d-animations](skills/scroll-based-3d-animations/) | Immersive scroll-driven 3D web animations |
-| [video-to-frames-workflow](skills/video-to-frames-workflow/) | Extract video frames for scroll animations & sprites |
+**Note:** Installation differs by platform. Claude Code or Cursor have built-in plugin marketplaces. Codex and OpenCode require manual setup.
 
-### 🚀 Deployment
-| Skill | Description |
-|-------|-------------|
-| [ai-website-deployment](skills/ai-website-deployment/) | Deploy AI-generated sites to Vercel, Netlify, etc. |
+### Claude Code (via Plugin Marketplace)
 
-### 📚 Meta
-| Skill | Description |
-|-------|-------------|
-| [using-superpowers](skills/using-superpowers/) | How to use this skill collection |
-| [writing-skills](skills/writing-skills/) | How to author new skills |
+In Claude Code, register the marketplace first:
 
-## 🚀 Quick Start
-
-1. **Copy the `skills/` folder** to your project's `.agent/skills/` directory
-2. **Reference skills** in your agent configuration
-3. **Customize** brand-identity and other skills for your project
-
-## 📝 Creating New Skills
-
-Use the [antigravity-skill-creator](skills/antigravity-skill-creator/) skill:
-
-```
-"Based on my skill creator instructions, build me a skill for [your task]"
+```bash
+/plugin marketplace add obra/superpowers-marketplace
 ```
 
-Or follow the structure in [writing-skills](skills/writing-skills/).
+Then install the plugin from this marketplace:
 
-## 📄 License
+```bash
+/plugin install superpowers@superpowers-marketplace
+```
 
-MIT
+### Cursor (via Plugin Marketplace)
+
+In Cursor Agent chat, install from marketplace:
+
+```text
+/plugin-add superpowers
+```
+
+### Codex
+
+Tell Codex:
+
+```
+Fetch and follow instructions from https://raw.githubusercontent.com/obra/superpowers/refs/heads/main/.codex/INSTALL.md
+```
+
+**Detailed docs:** [docs/README.codex.md](docs/README.codex.md)
+
+### OpenCode
+
+Tell OpenCode:
+
+```
+Fetch and follow instructions from https://raw.githubusercontent.com/obra/superpowers/refs/heads/main/.opencode/INSTALL.md
+```
+
+**Detailed docs:** [docs/README.opencode.md](docs/README.opencode.md)
+
+### Verify Installation
+
+Start a new session in your chosen platform and ask for something that should trigger a skill (for example, "help me plan this feature" or "let's debug this issue"). The agent should automatically invoke the relevant superpowers skill.
+
+## The Basic Workflow
+
+1. **brainstorming** - Activates before writing code. Refines rough ideas through questions, explores alternatives, presents design in sections for validation. Saves design document.
+
+2. **using-git-worktrees** - Activates after design approval. Creates isolated workspace on new branch, runs project setup, verifies clean test baseline.
+
+3. **writing-plans** - Activates with approved design. Breaks work into bite-sized tasks (2-5 minutes each). Every task has exact file paths, complete code, verification steps.
+
+4. **subagent-driven-development** or **executing-plans** - Activates with plan. Dispatches fresh subagent per task with two-stage review (spec compliance, then code quality), or executes in batches with human checkpoints.
+
+5. **test-driven-development** - Activates during implementation. Enforces RED-GREEN-REFACTOR: write failing test, watch it fail, write minimal code, watch it pass, commit. Deletes code written before tests.
+
+6. **requesting-code-review** - Activates between tasks. Reviews against plan, reports issues by severity. Critical issues block progress.
+
+7. **finishing-a-development-branch** - Activates when tasks complete. Verifies tests, presents options (merge/PR/keep/discard), cleans up worktree.
+
+**The agent checks for relevant skills before any task.** Mandatory workflows, not suggestions.
+
+## What's Inside
+
+### Skills Library
+
+**Testing**
+
+- **test-driven-development** - RED-GREEN-REFACTOR cycle (includes testing anti-patterns reference)
+
+**Debugging**
+
+- **systematic-debugging** - 4-phase root cause process (includes root-cause-tracing, defense-in-depth, condition-based-waiting techniques)
+- **verification-before-completion** - Ensure it's actually fixed
+
+**Collaboration**
+
+- **brainstorming** - Socratic design refinement
+- **writing-plans** - Detailed implementation plans
+- **executing-plans** - Batch execution with checkpoints
+- **dispatching-parallel-agents** - Concurrent subagent workflows
+- **requesting-code-review** - Pre-review checklist
+- **receiving-code-review** - Responding to feedback
+- **using-git-worktrees** - Parallel development branches
+- **finishing-a-development-branch** - Merge/PR decision workflow
+- **subagent-driven-development** - Fast iteration with two-stage review (spec compliance, then code quality)
+
+**Meta**
+
+- **writing-skills** - Create new skills following best practices (includes testing methodology)
+- **using-superpowers** - Introduction to the skills system
+
+## Philosophy
+
+- **Test-Driven Development** - Write tests first, always
+- **Systematic over ad-hoc** - Process over guessing
+- **Complexity reduction** - Simplicity as primary goal
+- **Evidence over claims** - Verify before declaring success
+
+Read more about the Superpowers philosophy in the skills documentation.
+
+## Contributing
+
+Skills live directly in this repository. To contribute:
+
+1. Fork the repository
+2. Create a branch for your skill
+3. Follow the `writing-skills` skill for creating and testing new skills
+4. Submit a PR
+
+See `skills/writing-skills/SKILL.md` for the complete guide.
+
+## Updating
+
+Skills update automatically when you update the plugin:
+
+```bash
+/plugin update superpowers
+```
+
+## License
+
+MIT License - see LICENSE file for details
+
+## Support
+
+- **Issues**: https://github.com/obra/superpowers/issues
+- **Marketplace**: https://github.com/obra/superpowers-marketplace
