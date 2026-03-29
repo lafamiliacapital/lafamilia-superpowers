@@ -9,8 +9,8 @@ Superpowers is a complete software development workflow for your coding agents, 
 Superpowers is built by [LunarTech](https://lunartech.ai/).
 
 - [LunarTech on LinkedIn](https://www.linkedin.com/company/lunartechai/)
-- [Tatev Karen Aslanyan](https://www.linkedin.com/in/tatev-karen-aslanyan/)
 - [Vahe Aslanyan](https://www.linkedin.com/in/vahe-aslanyan/)
+- [Tatev Karen Aslanyan](https://www.linkedin.com/in/tatev-karen-aslanyan/)
 
 ## How it works
 

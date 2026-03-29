@@ -117,3 +117,5 @@ Optionally delete the clone: `rm -rf ~/.codex/superpowers` (Windows: `Remove-Ite
 ### Windows junction issues
 
 Junctions normally work without special permissions. If creation fails, try running PowerShell as administrator.
+
+
